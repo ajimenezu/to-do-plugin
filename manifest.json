@@ -1,0 +1,20 @@
+{
+  "name": "To Do List",
+  "version": "1.0",
+  "description": "Simple To Do List!",
+  "manifest_version": 2,
+  "permissions": ["declarativeContent", "storage", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["background.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "To Do List",
+    "default_popup": "public/popup.html",
+    "default_icon": {
+      "128": "icons/noun_write.png"
+    }
+  }
+}
